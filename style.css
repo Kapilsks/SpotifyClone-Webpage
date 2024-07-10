@@ -1,0 +1,296 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+.main{
+    background-color: black;
+    height: 100vh;
+    display: flex;re
+}
+.sidebar{
+    background-color: black;
+    width: 20rem;
+}
+.mainbody{                          
+    background-color: #121212;
+    flex:1;
+    overflow: auto;
+    border-radius: .5rem;
+    margin: 2px;
+    margin-top: 4.8px;
+    margin-right: .55%;
+}
+.footer{
+    background-color:#7C64C8;
+    position: fixed;
+    bottom: 0px;
+    height: 4rem;
+    width: 97.3%;
+    margin-left:8px ;
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+.navbar{
+    height: 8rem;
+    width: 97%;
+    background-color: #121212;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 3.5rem;
+    position: relative;
+    margin: 0 1.5% 0 1.5%;
+    margin-top: 1.5%;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: .8rem;
+    font-weight: 700;
+}
+.navbar i {
+    color: white;
+    font-size: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.navbar .search a{
+    color: white;
+    opacity: .5;
+    transition: .8s;
+}
+.navbar .search i {
+    color: white;
+    opacity: .7;
+    transition: .6s;
+}
+.navbar .search a:hover {
+    opacity: 1;
+}
+
+.navbar .search i:hover {
+    opacity: 1;
+}
+.library{
+    height:460px ;
+    width: 97%;
+    background-color: #121212;
+    margin-top: 2%;
+    border-radius: .5rem;
+    margin-left: 1.5%;
+}
+.library .yourlib{
+    display: flex;
+    padding:2%;
+    margin-left: 5%;
+    padding-top: 5%;
+}
+.library .yourlib .lib img{
+    height: 1rem;
+    width: 1rem;
+    /* opacity: .5; */
+    padding-right: 10px;
+    transition: .5s;
+}
+.library .yourlib .lib p{
+    font-size: .8rem;
+    font-weight: 700;
+    transition: .5s;
+}
+.library .yourlib .lib{
+    display: flex;
+    opacity: .5;
+    transition: .5s;
+}
+.library .yourlib .lib:hover {
+    opacity: 1;
+}
+.library .yourlib .ic{
+    margin-left: 30%;
+}
+.library .yourlib .ic i {
+    padding-left: 20px;
+    color: white;
+    opacity: 0.8;
+    transition: .5s;
+}
+.library .yourlib .ic i:hover {
+    opacity: 1;
+}
+.library .playlist{
+    height: 8rem;
+    width: 97%;
+    background-color: #242424;
+    border-radius: .5rem;
+    margin: 0 1.5% 0 1.5%;
+    margin-top: 4.5%;
+    line-height: 1.5rem;
+}
+.library .playlist button{
+    background-color: white;
+    border: none;
+    color: black;
+    border-radius: 100px;
+    padding: .25rem 1rem;
+    font-weight: 600;
+}
+.library .playlist p{
+    padding-left: 5%;
+    padding-top: 2%;
+}
+.library .playlist button{
+    margin-left: 5%;
+    margin-top: 5%;
+    transition: .1s ease-in;
+    font-weight: 700;
+    line-height: 23px;
+}
+.library .playlist button:hover {
+    opacity: .8;
+    font-size: .85rem;
+}
+.library .libfooter  {
+    margin: 4%;
+}
+.library .libfooter a{
+    font-size: .6rem;
+    text-decoration: none;
+    padding-right: 15px;
+    padding-top:5%;
+    opacity: .6;
+}
+.library .libfooter button{
+    background-color: #121212;
+    border-radius: 100px;
+    border-color: white;
+    padding: .25rem 1rem;
+    font-size: .7rem;
+    font-weight: 600;
+    border-width: .5px;
+}
+.library .libfooter button i {
+    margin-right:3px;
+    margin-left: -.5rem;
+    /* transition: .3s; */
+}
+.library .libfooter button:hover {
+    border-width: 1px;
+    border-color:white ;
+    font-size: .8rem;
+}
+.footer{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-direction: column; */
+}
+.footer{
+    padding-left:1.5rem ;
+}
+.footer p{
+    font-size: 13px;
+    font-weight: 600;
+}
+.footer button{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: .25rem 1rem;
+    border-radius: 100px;
+    font-weight: 700;
+    margin-right: 20px;
+    line-height: 35px;
+}
+.mainbody .mainnav{
+    height: 4rem;
+    width: 100%;
+    background-color: #202020;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:sticky;
+    top: 0px;
+    z-index: 10;
+}
+.mainbody .mainnav .divicon {
+    margin-left: 2rem;
+}
+.mainbody .mainnav .divicon span{
+    opacity: .8;
+    font-weight: 100;
+}
+.mainbody .mainnav .divicon span:hover {
+    opacity: 1;
+    font-weight: 200;
+}
+.mainbody .mainnav .navbtn1 button{
+    background-color:black;
+        border: none;
+        color: white;
+        padding: .25rem 1rem;
+        border-radius: 100px;
+        font-weight: 500;
+        margin-right: 20px;
+        line-height: 35px;
+        opacity: .5;
+}
+.mainbody .mainnav .navbtn2 button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: .25rem 1rem;
+    border-radius: 100px;
+    font-weight: 500;
+    margin-right: 20px;
+    line-height: 35px;
+}
+.mainbody .mainnav .buttons{
+    display: flex;
+}
+.mainbody .mainnav .navbtn1 button:hover {
+    font-weight: 700;
+    opacity: 1;
+}
+.mainbody .mainnav .navbtn2 button:hover {
+    font-weight: 700;
+}
+.mainbody h2{
+    font-weight: 600;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 1.5rem
+}
+.mainbody .cards{
+    height: 15rem;
+    width: 10rem;
+    background-color: #242424;
+    border-radius: .5rem;
+    margin-left: 30px;
+    margin-top: 20px;
+    /* */
+}
+/* .mainbody .cards:hover {
+    background-color: #242424;
+    opacity: 1;
+} */
+img{
+    width: 90%;
+    margin: 5%;
+    border-radius: .5rem;
+}
+.mainbody .cards .content{
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    line-height: 1rem;
+}
+.mainbody .bodycards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: start;
+}
